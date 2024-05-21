@@ -2,6 +2,7 @@ import express from "express";
 import authRuotes from "./routes/authroutes.js"
 import userRoutes from "./routes/userRoutes.js"
 import postroutes from "./routes/postroutes.js"
+import notificationroutes from "./routes/notificationroutes.js"
 import dotenv from "dotenv";
 import { v2 as cloudinary } from "cloudinary";
 import connectMongoDb from "./db/connectMongoDb.js";
@@ -19,7 +20,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use("/api/auth", authRuotes);
 app.use("/api/users", userRoutes);
-app.use("/api/post", postroutes)
+app.use("/api/post", postroutes);
+app.use("/api/notifications",notificationroutes);
 app.listen(PORT, () => {
     console.log(`server is running on port ${PORT}`);
     connectMongoDb();

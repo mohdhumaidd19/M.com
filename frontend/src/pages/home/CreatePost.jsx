@@ -15,6 +15,7 @@ const CreatePost = () => {
 	const {mutate:CreatePost,isPending,isError,error}=useMutation({
 		mutationFn:async({text,img})=>{
 			try {
+			
 				const res=await fetch("/api/post/create",{
 					method:"POST",
 					headers:{

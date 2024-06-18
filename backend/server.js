@@ -25,6 +25,9 @@ app.use(cors(
    } 
     
 ));
+app.get("/",(req,res)=>{
+    res.json("Hello");
+})
 const __dirname=path.resolve()
 app.use(express.json({limit:"5mb"}));//to parse req.body
 app.use(express.urlencoded({ extended: true }));

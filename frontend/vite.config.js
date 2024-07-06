@@ -9,6 +9,7 @@ export default defineConfig({
     proxy:{
       "/api":{
         target:"http://localhost:5000",
+     //   target:"http://https://twitter-backend-y8sx.onrender.com:5000",
         changeOrigin:true,
       }
     }

@@ -4,9 +4,12 @@
   "description": "",
   "main": "backend/server.js",
   "scripts": {
+   
     "dev": "nodemon backend/server.js",
-    "start":" node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+    "start": "node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+    "predeploy": "npm run build --prefix frontend",
+    "deploy": "gh-pages -d frontend/build"
   },
   "keywords": [],
   "author": "",

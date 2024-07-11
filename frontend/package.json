@@ -18,6 +18,7 @@
     "react-router-dom": "^6.23.1",
     "twitter": "file:.."
   },
+  "proxy": "http://localhost:5000",
   "devDependencies": {
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",

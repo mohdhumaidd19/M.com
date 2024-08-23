@@ -4,18 +4,11 @@
   "description": "",
   "main": "backend/server.js",
   "scripts": {
-<<<<<<< HEAD
+
     "dev": "NODE_ENV=development nodemon backend/server.js",
     "start":"NODE_ENV=production  node backend/server.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
-=======
-   
-    "dev": "NODE_ENV=development backend/server.js",
-    "start": "NODE_ENV=production node backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "predeploy": "npm run build --prefix frontend",
-    "deploy": "gh-pages -d frontend/build"
->>>>>>> 0c3256277bcbbedb244a8a6e36f8e644c376897b
+
   },
   "keywords": [],
   "author": "",

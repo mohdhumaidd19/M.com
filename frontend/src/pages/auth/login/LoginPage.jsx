@@ -56,14 +56,14 @@ const {mutate:loginMutation,isPending, isError,error}=useMutation({
 			{/* <div className='flex-1 hidden lg:flex items-center  justify-center '>
 				<XSvg className='lg:w-2/3 fill-white' />
 			</div> */}
-			<div className='flex-1 hidden lg:flex items-center justify-center'>
+			{/* <div className='flex-1 hidden lg:flex items-center justify-center'>
   <XSvg className='lg:w-3/4 transform translate-x-[-40px] translate-y-[-40px] fill-white' />
-</div>
+</div> */}
 
 			<div className='flex-1 flex flex-col justify-center items-center'>
 				<form className='flex gap-4 flex-col' onSubmit={handleSubmit}>
 					{/* <XSvg className='w-24 lg:hidden fill-white' /> */}
-					<h1 className='text-4xl font-extrabold text-white'>{"Let's"} go.</h1>
+					<h1 className='text-4xl font-extrabold text-white'>{"Login"} </h1>
 					<label className='input input-bordered rounded flex items-center gap-2'>
 						<MdOutlineMail />
 						<input
